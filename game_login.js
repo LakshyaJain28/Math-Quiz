@@ -1,4 +1,7 @@
-function addUser()
+player1_score= 0;
+player2_score=0;
+
+function addUserName()
 {
     player1_name= document.getElementById("player1_name_input").value;
     player2_name= document.getElementById("player2_name_input").value;
