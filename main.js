@@ -33,6 +33,16 @@ player2_score=0;
 function check()
 {
     get_answer=document.getElementById("input_check_box").value;
+    if(question_turn == "player1")
+	{
+		question_turn = "player2"
+		document.getElementById("player_question").innerHTML = "Question Turn - " + player2_name ;
+	}
+	else 
+	{
+		question_turn = "player1"
+		document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name ;
+	}
     if(get_answer == actual_answer)
     {
         if(answer_turn  == "player1")
